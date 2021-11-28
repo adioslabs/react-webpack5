@@ -1,0 +1,230 @@
+// ---------------------------------------------------------------- All Sections
+
+.why-us, .solutions, .products, .clients, .techstack, .contact-us, footer{
+	padding: 50px 0 15px 0;
+	scroll-margin-top: 6.6em; // sticky header overlap prevention
+}
+
+.section-title{
+	.section-name{
+		font-weight: $bold;
+	}
+}
+
+// ---------------------------------------------------------------- Home Section
+.home{
+	font-family: $muli;
+	.banner{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;		
+		.banner-txt{
+			color: $cs02_05;       
+			font-weight: $blk;
+			font-size: 2em;
+			text-align: left;
+			display: inline-block;
+		}
+		.sub-txt{
+			margin-top: 25px;
+			color: $cs02_02;       
+			font-weight: $light;
+			font-size: 1.5em;
+			text-align: left;
+			display: inline-block;
+		}
+		a{
+			margin-top: 50px;
+			button{				
+				background-color: $cs02_05;
+				color: $base-bg;
+				border-color: $cs02_05 !important;
+				border: solid;
+				font-weight: bold;
+				&:hover{
+					background-color: $base-bg;
+					border-color: $cs02_05;
+					color: $cs02_05;
+				}		
+			}
+		}
+	}
+    
+}
+
+.logo{
+    max-width: 50%;
+    height: auto;
+}
+// ------------------------------------------------------------------------ Header
+
+header{
+	min-width: 100vw;
+	padding: 25px 0px;
+}
+.overlay {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	// background-color: #0e0e0f;
+	opacity: 1;
+}
+.is-transparent{
+	background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+//  ------------------------------------------------------------------------ Header Menu
+.menu_list{
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu_item{
+	display: block;
+	margin: 1em 0;
+}
+.menu_link{
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	&:hover, &:focus{
+		outline: none;
+	}
+}
+.menu--style {
+	.menu_link {
+		position: relative;
+		min-width: 105px;
+		text-align: center;
+		color: $cs02_02;
+		-webkit-transition: color 0.3s;
+		transition: color 0.3s;
+		&:hover, &:focus{
+			color: $cs02_01;
+		}
+	}
+	.menu_item{
+		position: relative;
+		margin: 0 1em;
+	}
+	.menu_item--current{
+		.menu_link{
+			color: $cs02_05;
+		}
+	}
+}
+
+// ----------------------------------------------------------------------  Footer menu
+footer{
+	hr{
+		margin: 3em 0 1em 0;
+		border: 0;
+		border-top: 1px solid unquote($cs02_04 + '50');
+	}
+	.footer-menu{
+	line-height: 30px;
+	font-size: 14px;
+	white-space: nowrap;
+		a{
+			text-decoration: none;
+			font-weight: bold;
+			color: $base-bg;
+			&:hover{
+				color: $cs02_02;
+			}
+		}
+	}
+	.copyright{
+		font-size: small;
+		padding-top: 15px;
+		text-align: center;
+		display: inline-block;
+	}
+	.footer-contact{
+		font-size: 14px;
+	}
+}
+
+
+// ----------------------------------------------------------------------  Why Choose Us
+.card{
+	color: $cs02_02;
+	border-color: $cs02_03;
+	.card-body{
+		background-color: $cs02_03;		
+		.card-title{
+			color: $cs02_01;
+		}
+		.card-subtitle{
+			color: $cs02_02;
+		}
+		.card-text{
+			color: $cs02_01;
+		}
+		.card-link{
+			text-decoration: none;
+			color: $cs02_04;
+		}
+	}
+}
+
+// ----------------------------------------------------------------------- Solutions
+.box_wrap {
+	color: $cs02_05;
+	background-color: $cs02_03;
+	box-shadow: 0 0 10px $cs02_05;
+	margin-top: 30px;
+	padding: 20px 15px;
+	transition: all 0.5s ease 0s;
+}
+.fixed_height {
+	height: 330px;
+}
+.text-center {
+	text-align: center !important;
+}
+
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+// ----------------------------------
+//          Ready Codes
+// ----------------------------------
+
+
+
+// Test Codes
+
+.grade-01 {
+	background-image: -webkit-linear-gradient(left, $cs02_05 0%,$cs02_04 99%);
+	background-image: linear-gradient(to right, $cs02_05 0%,$cs02_04 99%);
+}
+
+#particle-js{
+	position: relative;
+	z-index: -1;
+}
+
+h1{
+	font-weight: 900;
+	color: $spanish-green-hsl;
+}

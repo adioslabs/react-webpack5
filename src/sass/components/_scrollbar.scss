@@ -1,0 +1,22 @@
+html{
+    scrollbar-color: $cs02_05 $cs02_01;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar{
+        width: 5px;
+        height: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: -webkit-gradient(linear,left top,left bottom,from($cs02_05),to($cs02_05));
+        background: linear-gradient(to bottom,$cs02_05,$cs02_05);
+        // border-radius: 40px;
+        // -webkit-box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+        // box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    }
+
+    &::-webkit-scrollbar-track {
+        // background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
+        background: $cs02_01;
+    }
+}

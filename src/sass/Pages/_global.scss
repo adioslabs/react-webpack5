@@ -1,0 +1,94 @@
+.large_divider {
+	height:100px;
+}
+.small_divider {
+	height:50px;
+}
+.text_divider{
+	height:150px;
+}
+.small_space {
+	margin-top:20px;
+}
+.large_space {
+	margin-top: 50px;
+}
+.small_text * {
+    font-size: 14px;
+}
+.sub-text{
+	font-weight: $bold;
+}
+.divider {
+	clear: both;
+	display: block;
+	height: 20px;
+}
+.d-none {
+	display: none !important;
+}
+
+a, a:hover, a:active, a:link, a:visited  {
+	text-decoration: none;
+	outline: none;
+}
+strong {
+	font-weight: bold;
+}
+
+// Background Colors
+.bg-05{
+	background-color: $cs02_05;
+}
+.bg-04{
+	background-color: $cs02_04;
+}
+.bg-03{
+	background-color: $cs02_03;
+}
+.bg-02{
+	background-color: $cs02_02;
+}
+.bg-01{
+	background-color: $cs02_01;
+}
+
+// Background Text
+.txt-01{
+	color: $cs02_01;
+}
+.txt-02{
+	color: $cs02_02;
+}
+.txt-03{
+	color: $cs02_03;
+}
+.txt-04{
+	color: $cs02_04;
+}
+.txt-05{
+	color: $cs02_05;
+}
+.txt-white{
+	color: $base-bg;
+}
+.txt-black{
+	color: $base-txt-color;
+}
+
+// Layout size
+.hero-100{
+	@include hero-100;
+}
+.hero-75{
+	@include hero-75;
+}
+.hero-50{
+	@include hero-50;
+}
+.hero-25{
+	@include hero-25;
+}
+img.white-logo{
+	fill: white;
+}
